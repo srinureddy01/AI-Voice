@@ -6,9 +6,9 @@ A simple AI-powered voice assistant that listens to your voice, processes it usi
 
 ---
 
-## 🚀 How to Run This
+##  How to Run This
 
-### 📦 Install Dependencies
+###  Install Dependencies
 
 Make sure you have the necessary libraries installed:
 
