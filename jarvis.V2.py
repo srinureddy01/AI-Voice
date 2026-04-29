@@ -15,7 +15,7 @@ OUTPUT_FILE = "response.mp3"
 
 def play_audio():
     pygame.mixer.init()
-    if os.path.exists(OUTPUT_FILE):
+    if os.path.exists(OUTPUT_FILE): 
         pygame.mixer.music.load(OUTPUT_FILE)
         pygame.mixer.music.play()
         while pygame.mixer.music.get_busy():
