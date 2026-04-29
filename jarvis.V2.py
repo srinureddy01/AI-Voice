@@ -89,6 +89,8 @@ async def main():
             except Exception as e:
                 print(f"AI Error: {e}")
                 await speak("I've encountered a connection error, sir.")
+                #adding the commading to end the jarvis
+                #this update in the version 3
 
 if __name__ == "__main__":
     asyncio.run(main())
