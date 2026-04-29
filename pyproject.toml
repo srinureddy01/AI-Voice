@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-voice-jarvis"
+version = "0.2.0"
+description = "A voice-activated AI assistant using Gemini and Edge-TTS"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "edge-tts",
+    "pygame",
+    "speechrecognition",
+    "google-genai",
+    "PyAudio"
+]
+
+[project.scripts]
+jarvis-start = "jarvis.core:main"
