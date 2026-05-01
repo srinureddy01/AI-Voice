@@ -1,7 +1,10 @@
-import speech_recognition as sr
-import pyttsx3
-import google.generativeai as genai
-from config import API_KEY
+import asyncio
+import os
+import time
+import speech_recognition as sr  # This fixes the 'sr' error
+import pygame
+import edge_tts
+from google import genai      # Use the modern genai library
 
 # Setup Gemini
 genai.configure(api_key=API_KEY)
