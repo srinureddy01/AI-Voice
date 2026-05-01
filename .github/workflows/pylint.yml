@@ -23,7 +23,6 @@ jobs:
         # If you have a requirements.txt, uncomment the next line:
         # pip install -r requirements.txt
         
-    - name: Analysing the code with pylint
+- name: Analysing the code with pylint
       run: |
-        # The --exit-zero flag prevents the workflow from failing on warnings
         pylint $(git ls-files '*.py') --exit-zero
