@@ -7,24 +7,26 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        # Using stable Python versions
         python-version: ["3.11", "3.12"]
 
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
     
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # Added setuptools and pyaudio which are often required for voice projects
-        pip install setuptools wheel
-        pip install pygame edge-tts speechrecognition google-genai pyttsx3
+        # We install 'pylint' here so the 'command not found' error disappears
+        # We also install your project libraries so Pylint doesn't report 'import errors'
+        pip install pylint pygame edge-tts speechrecognition google-genai pyttsx3
         
     - name: Analysing the code with pylint
       run: |
-        # This is now properly indented under 'steps'
+        # $(git ls-files '*.py') finds all Python files in your repo
+        # --exit-zero ensures the check passes even if there are style warnings
         pylint $(git ls-files '*.py') --exit-zero
