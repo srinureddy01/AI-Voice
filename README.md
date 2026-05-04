@@ -29,3 +29,15 @@ Execution
 Run the script using:
 ```bash
 python jarvis.py
+``` 
+File Structure of jarvis 
+ 
+## 🛠️ Project Structure
+```text
+ai-voice-jarvis/
+├── jarvis.py           # Main entry point for the assistant
+├── jarvis_v2.py        # Optimized version with improved error handling
+├── jarvis_engine/      # Core logic and module functions
+│   └── core.py
+├── config.py           # Configuration and API Key management
+└── requirements.txt    # List of necessary Python libraries
