@@ -1,0 +1,12 @@
+1.  **requirements.txt:**   install everything at once:
+    ```text
+    pygame
+    edge-tts
+    SpeechRecognition
+    google-genai
+    pyttsx3
+    pylint
+    ```
+2.  **API Security:** Make sure your `config.py` is listed in your `.gitignore` file. **Never** push your actual API key to GitHub!
+
+ 
