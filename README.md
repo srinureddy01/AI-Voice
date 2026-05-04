@@ -30,9 +30,9 @@ Run the script using:
 ```bash
 python jarvis.py
 ``` 
-File Structure of jarvis 
  
-## 🛠️ Project Structure
+ 
+##  Project Structure
 ```text
 ai-voice-jarvis/
 ├── jarvis.py           # Main entry point for the assistant
