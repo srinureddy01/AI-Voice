@@ -1,0 +1,3 @@
+1. Have to make the jarvis as a agent 
+2. learn -> agents : automated booking agent ; summarise the emails agent ; summarise all the incomming calles logs and messages agesnt 
+3. create a road map 
