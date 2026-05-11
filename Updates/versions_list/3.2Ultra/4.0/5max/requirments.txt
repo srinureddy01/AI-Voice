@@ -1,0 +1,16 @@
+# Core automation
+pip install selenium webdriver-manager
+
+# For GUI automation (optional)
+pip install pyautogui
+
+# For YouTube downloads
+pip install yt-dlp
+
+# For browser driver management
+pip install webdriver-manager
+
+# Also need browser drivers:
+# Chrome: https://chromedriver.chromium.org/
+# Firefox: https://github.com/mozilla/geckodriver/releases
+# Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
